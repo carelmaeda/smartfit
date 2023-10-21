@@ -7,7 +7,7 @@
     padding: var(--p-md);
     border: solid 4px rgb(229, 229, 229);
     border-radius: 10px;
-    max-width: 80%;
+    width: 80%;
     font-weight: 300;
     gap:2rem;
     .form-icon{
@@ -61,10 +61,10 @@
         align-items: center;
         justify-content: center;
         .btn{
-            width: 25%;
-            min-width: min-content;
+            max-width: 300px;
+            width: 100%;
+            flex-grow: 1;
             border-radius: 4px;
-            border: none;
             color: var(--dark-grey);
             font-weight: 700;
             text-transform: uppercase;
@@ -72,11 +72,36 @@
             cursor: pointer;
         }
         .btn-primary{
+            border: none;
             background: var(--yellow);
         }
         .btn-secondary{
             background-color: var(--white);
             border: var(--border-primary);
+        }
+    }
+}
+
+/*Mobile*/
+
+$layout-breakpoint-small: 960px;
+
+
+@media only screen and (max-width: $layout-breakpoint-small){
+
+    .form-group{
+        .checkbox-wrapper{
+            flex-direction: column;
+            span{
+                width: 100%;
+                display: flex;
+            }
+        }
+        .btn-wrapper{
+            flex-direction: column;
+            .btn{
+                max-width: 100%;
+            }
         }
     }
 }

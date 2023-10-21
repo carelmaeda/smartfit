@@ -1,35 +1,100 @@
 .form-group {
   display: flex;
+  margin: 0 auto;
   align-items: flex-start;
   flex-direction: column;
   justify-content: center;
-  padding: 2rem;
+  padding: var(--p-md);
   border: solid 4px rgb(229, 229, 229);
   border-radius: 10px;
-  margin: 0 auto;
-  max-width: 80%;
-  color: var(--medium-text);
+  width: 80%;
   font-weight: 300;
+  gap: 2rem;
 }
 .form-group .form-icon {
   font-size: 14px;
-  color: var(--light-gray);
   font-weight: 300;
+  display: flex;
+  align-items: center;
+  gap: var(--p-sm);
+  color: var(--medium-text);
 }
 .form-group .form-icon img {
-  height: 30px;
+  height: 1rem;
 }
-.form-group h3 {
+.form-group .radio-container {
+  width: 100%;
+  color: var(--medium-text);
+}
+.form-group .radio-container h3 {
   font-size: 24px;
   font-weight: 300;
-  margin-bottom: 0.5rem;
+  border-bottom: var(--border-primary);
+  padding-bottom: var(--p-md);
 }
-.form-group .radio-wrapper {
+.form-group .radio-container .radio-wrapper {
   width: 100%;
-  height: 100%;
-  border-bottom: solid 1px var(--light-text);
+  border-bottom: var(--border-primary);
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-block: 0.5rem;
+  padding-block: var(--p-md);
+}
+.form-group .radio-container span {
+  display: flex;
+  gap: var(--p-md);
+}
+.form-group .checkbox-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--p-md);
+  width: 100%;
+}
+.form-group .checkbox-wrapper span {
+  display: flex;
+  gap: var(--p-md);
+}
+.form-group .btn-wrapper {
+  width: 100%;
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+  justify-content: center;
+}
+.form-group .btn-wrapper .btn {
+  max-width: 300px;
+  width: 100%;
+  flex-grow: 1;
+  border-radius: 4px;
+  color: var(--dark-grey);
+  font-weight: 700;
+  text-transform: uppercase;
+  padding: 1rem;
+  cursor: pointer;
+}
+.form-group .btn-wrapper .btn-primary {
+  border: none;
+  background: var(--yellow);
+}
+.form-group .btn-wrapper .btn-secondary {
+  background-color: var(--white);
+  border: var(--border-primary);
+}
+
+/*Mobile*/
+@media only screen and (max-width: 960px) {
+  .form-group .checkbox-wrapper {
+    flex-direction: column;
+  }
+  .form-group .checkbox-wrapper span {
+    width: 100%;
+    display: flex;
+  }
+  .form-group .btn-wrapper {
+    flex-direction: column;
+  }
+  .form-group .btn-wrapper .btn {
+    max-width: 100%;
+  }
 }/*# sourceMappingURL=forms.component.css.map */

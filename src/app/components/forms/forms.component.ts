@@ -24,6 +24,6 @@ onSubmit(): void{
 }
 
 onClean(): void{
-  console.log("clean")
+  console.log(this.formGroup.reset())
 }
 }
