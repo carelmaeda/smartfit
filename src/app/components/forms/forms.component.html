@@ -1,4 +1,4 @@
-<form action="" class="form-group">
+<form action="" class="form-group" [formGroup]="formGroup">
   <div class="form-icon">
     <img src="/assets/images/png/icon-hour.png" alt="" />Horario
   </div>
@@ -6,21 +6,39 @@
     <h3>Qual periodo voce quer treinar?</h3>
     <div class="radio-wrapper">
       <span>
-        <input type="radio" name="morning" id="" value="morning" />
+        <input
+          type="radio"
+          name="hour"
+          id=""
+          value="morning"
+          formControlName="hour"
+        />
         <label for="morning">Manha</label>
       </span>
       <span>06:00 as 12h</span>
     </div>
     <div class="radio-wrapper">
       <span>
-        <input type="radio" name="afternoon" id="" value="afternoon" />
+        <input
+          type="radio"
+          name="hour"
+          id=""
+          value="afternoon"
+          formControlName="hour"
+        />
         <label for="afternoon">Tarde</label>
       </span>
       <span>12:01 as 18h</span>
     </div>
     <div class="radio-wrapper">
       <span>
-        <input type="radio" name="night" id="" value="night" />
+        <input
+          type="radio"
+          name="hour"
+          id=""
+          value="night"
+          formControlName="hour"
+        />
         <label for="night">Noite</label>
       </span>
       <span>18:01 as 23h</span>
@@ -28,13 +46,15 @@
   </div>
   <div class="checkbox-wrapper">
     <span>
-      <input type="checkbox" name="show-closed" id="" />
-      <label for="show-closed">Exibir unidades fechadas</label>
+      <input type="checkbox" name="showClosed" formControlName="showClosed" />
+      <label for="showClosed">Exibir unidades fechadas</label>
     </span>
     <span>Resultados Encontrados: {{ results.length }} </span>
   </div>
   <div class="btn-wrapper">
-    <button class="btn btn-primary">Encontrar Unidades</button>
-    <button class="btn btn-secondary">Limpar</button>
+    <button class="btn btn-primary" (click)="onSubmit()">
+      Encontrar Unidades
+    </button>
+    <button class="btn btn-secondary" (click)="onClean()">Limpar</button>
   </div>
 </form>

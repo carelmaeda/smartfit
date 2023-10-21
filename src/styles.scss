@@ -27,9 +27,8 @@ body{
 
 
 @font-face {
-    font-family: 'Gotham';
-  src: url(/src/assets/fonts/Gotham/gotham-light.woff2.webloc)
-    format("truetype");
+  font-family: 'Gotham';
+  src: url(/src/assets/fonts/Gotham/gotham-light.woff2.webloc) format("woff2");
   font-weight: 300;
   font-style: normal;
 }
