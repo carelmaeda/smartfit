@@ -4,8 +4,13 @@
   --light-text:#e5e5e5;
   --medium-text:#939393;
   --yellow: #ffb612;
+  --white:#ffffff;
   --red: #dc0a17;
   --green: #2fc022;
+  --p-md:1rem;
+  --p-sm:0.5rem;
+  --p-lg:2rem;
+  --border-primary:solid 1px var(--light-text);
 }
 
 * {
@@ -22,25 +27,25 @@ body {
 
 @font-face {
   font-family: "Gotham";
-  src: url(/src/assets/fonts/Gotham/gotham-light.woff2.webloc) format("truetype");
+  src: url(/src/assets/fonts/Gotham/gotham-light.woff2) format("woff2");
   font-weight: 300;
   font-style: normal;
 }
 @font-face {
   font-family: "Gotham";
-  src: url(/src/assets/fonts/Gotham/gotham-book.woff2.webloc) format("truetype");
+  src: url(/src/assets/fonts/Gotham/gotham-book.woff2) format("woff2");
   font-weight: 500;
   font-style: normal;
 }
 @font-face {
   font-family: "Gotham";
-  src: url(/src/assets/fonts/Gotham/gotham-bold.woff2.webloc) format("truetype");
+  src: url(/src/assets/fonts/Gotham/gotham-bold.woff2) format("woff2");
   font-weight: 700;
   font-style: normal;
 }
 @font-face {
   font-family: "Gotham";
-  src: url(/src/assets/fonts/Gotham/gotham-black.woff2.webloc) format("truetype");
+  src: url(/src/assets/fonts/Gotham/gotham-book.woff2) format("woff2");
   font-weight: 900;
   font-style: normal;
 }/*# sourceMappingURL=styles.css.map */
