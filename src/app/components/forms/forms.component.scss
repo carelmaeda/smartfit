@@ -1,0 +1,82 @@
+.form-group{
+    display: flex;
+    margin: 0 auto;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+    padding: var(--p-md);
+    border: solid 4px rgb(229, 229, 229);
+    border-radius: 10px;
+    max-width: 80%;
+    font-weight: 300;
+    gap:2rem;
+    .form-icon{
+        font-size: 14px;
+        font-weight: 300;
+        display: flex;
+        align-items: center;
+        gap:var(--p-sm);
+        color: var(--medium-text);
+        img{
+            height: 1rem;
+        }
+    }
+    .radio-container{
+        width: 100%;
+        color: var(--medium-text);
+        h3{
+            font-size: 24px;
+            font-weight: 300;
+            border-bottom: var(--border-primary);
+            padding-bottom: var(--p-md);
+        }
+        .radio-wrapper{
+            width: 100%;
+            border-bottom: var(--border-primary);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding-block: var(--p-md);
+        }
+        span{
+            display: flex;
+            gap:var(--p-md);
+        }
+    }
+    .checkbox-wrapper{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap:var(--p-md);
+        width: 100%;
+        span{
+            display: flex;
+            gap:var(--p-md);
+        }
+    }
+    .btn-wrapper{
+        width: 100%;
+        display: flex;
+        gap:1rem;
+        align-items: center;
+        justify-content: center;
+        .btn{
+            width: 25%;
+            min-width: min-content;
+            border-radius: 4px;
+            border: none;
+            color: var(--dark-grey);
+            font-weight: 700;
+            text-transform: uppercase;
+            padding: 1rem;
+            cursor: pointer;
+        }
+        .btn-primary{
+            background: var(--yellow);
+        }
+        .btn-secondary{
+            background-color: var(--white);
+            border: var(--border-primary);
+        }
+    }
+}

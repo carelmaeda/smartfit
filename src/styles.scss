@@ -1,9 +1,16 @@
 :root {
   --dark-grey: #333333;
   --light-grey: #808080;
+  --light-text:#e5e5e5;
+  --medium-text:#939393;
   --yellow: #ffb612;
+  --white:#ffffff;
   --red: #dc0a17;
   --green: #2fc022;
+  --p-md:1rem;
+  --p-sm:0.5rem;
+  --p-lg:2rem;
+  --border-primary:solid 1px var(--light-text);
 }
 
 *{
@@ -17,6 +24,7 @@ body{
     height: 100%;
     width: 100%;
 }
+
 
 @font-face {
     font-family: 'Gotham';
